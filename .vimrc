@@ -53,9 +53,11 @@ nnoremap <S-Tab> <<
 nnoremap <Down> gj
 nnoremap <Up> gk
 nnoremap <C-S-d> :AUTOSPLIT<CR>
-nnoremap <C-PageUp> :ZOOM 1<CR>
+noremap <C-PageUp> :ZOOM 1<CR>
 nnoremap <C-PageDown> :ZOOM -1<CR>
-nnoremap <C-Tab> :TABNEXT()<LEFT>
+nnoremap <C-Home> :tabNext<CR>
+nnoremap <C-End> :tabnext<CR>
+"nnoremap <C-Tab> :TABNEXT()<LEFT>
 
 set shellslash
 set guioptions+=a
@@ -63,7 +65,6 @@ set splitbelow
 set splitright
 
 set number
-set relativenumber
 set noruler
 set nolist
 set wrap
