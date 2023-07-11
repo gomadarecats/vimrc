@@ -41,8 +41,8 @@ ca utf8 e ++enc=utf-8
 ca sjis e ++enc=sjis
 ca euc e ++enc=euc-jp
 ca defont set guifont=MS_Gothic:h12:cSHIFTJIS
-ca wslexec ! wsl -e
-ca wslread %! wsl -e
+"ca wslexec ! wsl -e
+"ca wslread %! wsl -e
 ca nt tabnew
 ca file e .
 nnoremap <Esc><Esc> :noh<CR>
