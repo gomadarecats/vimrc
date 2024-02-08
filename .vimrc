@@ -34,6 +34,8 @@ inoremap <S-Tab> <ESC><<<S-a>
 cnoremap <S-q> q!
 ca vdiff vertical diffsplit
 ca vsed %s
+ca vhex %!xxd
+ca vxxd %!xxd
 ca vuniq sort u
 ca vn vertical new
 ca mojibake e ++enc=utf-8
