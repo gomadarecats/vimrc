@@ -38,10 +38,10 @@ ca vhex %!xxd
 ca vxxd %!xxd
 ca vuniq sort u
 ca vn vertical new
-ca mojibake e ++enc=utf-8
-ca utf8 e ++enc=utf-8
-ca sjis e ++enc=sjis
-ca euc e ++enc=euc-jp
+ca mojibake e! ++enc=utf-8
+ca utf8 e! ++enc=utf-8
+ca sjis e! ++enc=sjis
+ca euc e! ++enc=euc-jp
 ca defont set guifont=MS_Gothic:h12:cSHIFTJIS
 "ca wslexec ! wsl -e
 "ca wslread %! wsl -e
