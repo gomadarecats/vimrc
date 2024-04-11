@@ -2,9 +2,12 @@ scriptencoding utf-8
 set encoding=utf-8
 set fileencodings=utf-8,sjis,iso-2022-jp,euc-jp
 set fileformats=unix,dos,mac
+set ambiwidth=double
 
+set incsearch
 set ignorecase
 set smartcase
+set hlsearch
 
 set clipboard=unnamed,autoselect
 set tabstop=2
@@ -47,6 +50,10 @@ ca defont set guifont=MS_Gothic:h12:cSHIFTJIS
 "ca wslread %! wsl -e
 ca nt tabnew
 ca file e .
+nnoremap <S-h> <Home>
+nnoremap <S-j> <PageDown>
+nnoremap <S-k> <PageUp>
+nnoremap <S-l> <End>
 nnoremap <Esc><Esc> :noh<CR>
 nnoremap ; :
 nnoremap <Tab> >>
@@ -67,7 +74,7 @@ set splitbelow
 set splitright
 
 set number
-set noruler
+set ruler
 set nolist
 set wrap
 set laststatus=1
